@@ -8,11 +8,10 @@ interface Education {
 }
 
 @Component({
-  selector: 'app-education',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './education.component.html',
-  styleUrl: './education.component.css'
+    selector: 'app-education',
+    imports: [CommonModule],
+    templateUrl: './education.component.html',
+    styleUrl: './education.component.css'
 })
 export class EducationComponent {
   educations : Education[] = [

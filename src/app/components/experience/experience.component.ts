@@ -10,11 +10,10 @@ interface Job {
 }
 
 @Component({
-  selector: 'app-experience',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './experience.component.html',
-  styleUrl: './experience.component.css'
+    selector: 'app-experience',
+    imports: [CommonModule],
+    templateUrl: './experience.component.html',
+    styleUrl: './experience.component.css'
 })
 
 

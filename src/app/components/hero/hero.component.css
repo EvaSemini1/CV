@@ -1,0 +1,235 @@
+.container-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4em;
+}
+
+.menu{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap-size-big); 
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end;
+}
+
+.menu li{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap-size-big);
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: var(--text-small); 
+    font-family: var(--font);
+    font-weight: var(--font-small-weight);
+    transition: color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-size-big);
+}
+
+.profile{
+    width: 140px;
+    border: 3px solid var(--border-color);
+    border-radius: var(--radius);
+}
+.logo-container{
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-size);
+}
+.prompt{
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-size-small);
+}
+
+.prompt-one, .prompt-two, .prompt-three {
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap-size-small);
+  font-family: var(--font);
+}
+
+.available, .location, .remote {
+  border: none;
+  width: 20px;
+  height: 20px;
+}
+
+.available-p, .location-p, .remote-p{
+  color: var(--signal);
+}
+
+.title span, .about-me span {
+  color: var(--signal);
+  font-family: var(--font);
+}
+
+.hero-section {
+    max-width: 920px;
+    margin: 0 auto;
+    display: block;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: var(--padding-global);
+}
+.hero-wrapper{
+  display: flex;
+  padding: var(--padding-up-down);
+}
+.container {
+    flex: 1;
+    margin-left: 80px;
+    display: flex;
+    gap: var(--gap-size-big);
+    flex-direction: column;
+}
+
+.cta-container{
+    display: flex;
+    gap: var(--gap-size-big);
+}
+
+.btn {
+    background-color: var(--border-color);
+    color: var(--paper);
+    border-radius: var(--radius);
+    padding: var(--btn-padding);
+    text-decoration: none;
+}
+.download-button{
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: var(--padding-box);
+}
+.download-button:hover{
+    color: var(--paper);
+    background-color: var(--border-color);
+}
+.title{
+    font-size: var(--title-big-size);
+    font-weight: var(--title-small-size);
+}
+.about-container{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-size);
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 720px){
+
+  .hero-section{
+    padding: 0 16px;
+    flex-direction: column;
+  }
+
+  .hero-wrapper{
+  display: block;
+  
+  }
+  .container-menu{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:16px;
+    padding:16px 0;
+  }
+
+  .logo-container img{
+    width:48px;
+    height:48px;
+    border-radius: var(--raduis);
+    object-fit:cover;
+  }
+
+  .menu ul{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:10px;
+    width:100%;
+  }
+
+  .menu ul li{
+    width:100%;
+  }
+
+  .menu li{
+        flex-direction: row;
+        display: flex;
+        gap: var(--gap-standard);
+        align-items: center;
+        justify-content: space-evenly;
+
+  }
+
+  .menu a{
+    /* display:block; */
+    display: flex;
+    flex-direction: row;
+    font-size: var(--text-small);
+    padding:6px 0;
+  }
+
+  a.download-button{
+    margin-top:6px;
+    display:inline-block;
+    padding:10px 16px;
+    border:1px solid var(--ink);
+    border-radius:2px;
+    text-align:center;
+  }
+
+  .container{
+    margin: auto;
+  }
+
+  /* titulli */
+  .title-container .title{
+    font-size:26px;
+    line-height:1.2;
+  }
+
+  /* teksti about */
+  .about-container{
+    margin-top:24px;
+  }
+
+  .about-me{
+    font-size:14.5px;
+    line-height:1.55;
+  }
+
+  .small-text{
+    font-size:12px;
+    margin-top:12px;
+  }
+
+  /* butonat CTA — stack vertikal, full width */
+  .cta-container{
+    flex-direction:column;
+    gap:10px;
+    margin-top:24px;
+  }
+
+  .cta-container .btn{
+    width:100%;
+    text-align:center;
+    justify-content:center;
+  }
+}
+
+/* ---------- extra small (telefona shumë të vegjël) ---------- */
+@media (max-width: 380px){
+  .title-container .title{
+    font-size:22px;
+  }
+}

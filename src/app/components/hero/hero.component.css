@@ -9,7 +9,7 @@
 .prompt{gap:var(--gap-size-small)}
 .prompt-one,.prompt-two,.prompt-three,.cta-container{display:flex;gap:var(--gap-size-big)}
 .prompt-one,.prompt-two,.prompt-three{gap:var(--gap-size-small);font-family:var(--font)}
-.available,.location,.remote{width:20px;height:20px;border:0}
+#available,#location,#remote{width:20px;height:20px;border:0}
 .available-p,.location-p,.remote-p,.title span,.about-me span{color:var(--signal)}
 .title span,.about-me span{font-family:var(--font)}
 .hero-section{max-width:920px;margin:0 auto;padding:var(--padding-global)}

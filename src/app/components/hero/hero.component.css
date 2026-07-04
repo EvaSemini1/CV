@@ -17,8 +17,9 @@
 .container{flex:1;margin-left:80px;gap:var(--gap-size-big)}
 .cta-container{display:flex}
 .btn{padding:var(--btn-padding);border-radius:var(--radius);background:var(--border-color);color:var(--paper);text-decoration:none}
-.download-button{padding:var(--padding-box);border:1px solid var(--border-color);border-radius:var(--radius)}
-.download-button:hover{background:var(--border-color);color:var(--paper)}
+.cv{padding: 5px 8px;border:1px solid var(--border-color);border-radius:var(--radius);display: flex;flex-direction: row; gap: 5px; align-items: center;}
+.cv-img{width: 15px; height: 15px;}
+.cv:hover{background:var(--border-color);color:var(--paper)}
 .title{font-size:var(--title-big-size);font-weight:var(--title-small-size)}
 
 @media(max-width:720px){
@@ -30,7 +31,7 @@
 .menu ul li{width:100%}
 .menu li{justify-content:space-evenly;gap:var(--gap-standard)}
 .menu a{flex-direction:row;padding:6px 0}
-.download-button{display:inline-block;margin-top:6px;padding:10px 16px;border:1px solid var(--ink);border-radius:2px}
+.download-button{display:inline-block;margin-top:6px;padding:10px 16px;}
 .container{margin:auto}
 .title-container .title{font-size:26px;line-height:1.2}
 .about-container{margin-top:24px}
